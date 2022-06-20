@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1abc7822bd9f28e9a62986817bf04f76",
+    "content-hash": "eead3cad8d9a0f1a05b04d30ecec2e89",
     "packages": [
         {
             "name": "brick/math",
@@ -892,6 +892,68 @@
                 }
             ],
             "time": "2022-03-20T21:55:58+00:00"
+        },
+        {
+            "name": "laravel-ready/license-connector",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "C:/Users/e9396/Documents/GitHub/laravel-ready/license-connector",
+                "reference": "4aa9ca7474113afb794f915040268c51f054946f"
+            },
+            "require": {
+                "illuminate/support": "^9.0",
+                "php": "^8.0.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.4",
+                "orchestra/testbench": "^7.0.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelReady\\LicenseConnector\\LicenseConnectorServiceProvider"
+                    ],
+                    "aliases": {
+                        "LicenseConnector": "LaravelReady\\LicenseConnector\\Facades\\LicenseConnector"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelReady\\LicenseConnector\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\": "tests"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EgoistDeveloper",
+                    "email": "epsilonelittr@gmail.com"
+                }
+            ],
+            "description": "Connector package for License Server",
+            "keywords": [
+                "laravel",
+                "license",
+                "license-manager",
+                "license-server"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel-ready/license-server/issues",
+                "source": "https://github.com/laravel-ready/license-server"
+            },
+            "transport-options": {
+                "relative": false
+            }
         },
         {
             "name": "laravel/framework",

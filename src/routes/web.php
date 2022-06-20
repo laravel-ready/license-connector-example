@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use LaravelReady\LicenseConnector\Services\ConnectorService;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $licenseKey = '46fad906-bc51-435f-9929-db46cb4baf13';
+    $licenseStatus = ConnectorService::validateLicense($licenseKey);
+
+    return view('welcome', compact('licenseKey', 'licenseStatus'));
 });
